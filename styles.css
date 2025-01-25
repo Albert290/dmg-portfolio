@@ -1,4 +1,10 @@
 /* General header styling */
+body {
+    background-color: #222;
+    border: 2px solid #ffeb3b; /* Shiny yellow border */
+    padding: 10px; /* Add space between border and content */
+}
+
 .header {
     background-color: #1e293b; /* Navy blue */
     color: #ffffff; /* White text */
@@ -112,5 +118,104 @@
     background-color: #38bdf8; /* Darker red on hover */
     border-color: #ff2f2f; /* Darker border on hover */
   }
-  
-  
+/* General styling for the 'our-services' section */
+.our-services {
+    padding: 4rem 2rem;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Center the main heading */
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffeb3b; /* Yellow color */
+    text-align: center;
+    margin-bottom: 3rem; /* Space below the heading */
+}
+
+/* Styling for the nested 'What We Do' section */
+#what-we-do {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Space between the subsections */
+}
+
+/* Services Section */
+.services {
+    border: 2px solid #ffeb3b; /* Shiny yellow border */
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #38bdf8; /* Blue color for headings */
+    margin-bottom: 1rem;
+}
+
+/* Service list items */
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.service-list li:hover {
+    color: #ff6363; /* Hover effect on list items */
+    cursor: pointer;
+}
+
+/* What to Do Section */
+.what-to-do {
+    text-align: center;
+}
+
+.what-to-do-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #38bdf8; /* Blue color for heading */
+    margin-bottom: 2rem; /* Space below the heading */
+}
+
+/* Responsive columns for What to Do */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Space between columns */
+    justify-content: center;
+}
+
+.column {
+    flex: 1 1 15%; /* Each column takes 15% of the width */
+    min-width: 180px;
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid #34d399; /* Shiny green border */
+    transition: transform 0.3s ease;
+}
+
+.column:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 30%; /* For medium screens, each column takes 30% */
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        flex: 1 1 100%; /* For small screens, each column takes 100% */
+    }
+}
+
