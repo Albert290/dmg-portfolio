@@ -25,12 +25,12 @@
         </nav> 
         <section class="hero">
             <div class="hero-content">
-                <h1>Welcome to DMG</h1>
+                <h1>DMG Financial Consultants</h1>
                 <p>Your trusted partner for innovative solutions and exceptional services.</p>
-                <a href="#" class="cta-button">Get Started</a>
+                <a href="#" class="cta-button">Contact us</a>
             </div>
             <div class="hero-image">
-                <img src="your-image.jpg" alt="DMG Services">
+                <img src="images/f.jpeg" alt="DMG Services">
             </div>
         </section>
         <section class="about">
@@ -38,22 +38,46 @@
             <p>At DMG, we are dedicated to delivering top-notch services tailored to meet your needs. With years of experience and a passion for innovation, we strive to exceed expectations.</p>
             <a href="#" class="learn-more">Learn More</a>
         </section>
+                        <!-- Certifications/Partnerships Section -->
+<section class="certifications">
+    <h2>Our Certifications & Partnerships</h2>
+    <div class="certification-logos">
+        <div class="logo-item">
+            <img src="images/sage-removebg-preview.png" alt="Sage Certified Adviser">
+            <p>Certified Adviser with Sage</p>
+        </div>
+        <div class="logo-item">
+            <img src="images/zoho.png" alt="Zoho Authorised Partner">
+            <p>Authorised Partner with Zoho</p>
+        </div>
+    </div>
+</section>
         <section class="services">
             <h2>Our Services</h2>
             <div class="service-cards">
                 <div class="card">
                     <i class="fas fa-cogs"></i>
-                    <h3>Service One</h3>
+                    <h3>Accounting</h3>
                     <p>Description of the first service you offer.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Service Two</h3>
+                    <h3>Business Solution</h3>
+                    <p>Description of the second service you offer.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business Solution</h3>
+                    <p>Description of the second service you offer.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business Solution</h3>
                     <p>Description of the second service you offer.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-users"></i>
-                    <h3>Service Three</h3>
+                    <h3>Tax and Advisory</h3>
                     <p>Description of the third service you offer.</p>
                 </div>
             </div>
@@ -63,6 +87,38 @@
             <p>Join us today and experience the difference.</p>
             <a href="#" class="cta-button">Sign Up Now</a>
         </section>
+        <section class="blog">
+            <div class="container">
+              <h2>Latest Insights</h2>
+              <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                  <div class="image-container">
+                    <img src="images/download.jpeg" alt="Market trends">
+                    <span class="blog-tag">Market Analysis</span>
+                  </div>
+                  <div class="blog-content">
+                    <h3>2024 Global Market Predictions</h3>
+                    <p>Discover key trends shaping next year's investments...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                  </div>
+                </article>
+          
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                  <div class="image-container">
+                    <img src="images/download (1).jpeg" alt="Tax documents">
+                    <span class="blog-tag">Tax Strategy</span>
+                  </div>
+                  <div class="blog-content">
+                    <h3>Navigating New Tax Regulations</h3>
+                    <p>Essential updates for corporate finance teams...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
         <section class="testimonials">
             <h2>What Our Clients Say</h2>
             <div class="testimonial-cards">
@@ -76,6 +132,31 @@
                 </div>
             </div>
         </section>
+        <section class="faq">
+            <div class="container">
+              <h2>Common Questions</h2>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What makes DMG different from other firms?</h3>
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Our proprietary financial models combined with...</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How do you ensure data security?</h3>
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  <p>We use enterprise-grade encryption and...</p>
+                </div>
+              </div>
+            </div>
+          </section>
         <section class="contact">
             <h2>Contact Us</h2>
             <form action="#" method="post">
@@ -106,3 +187,10 @@
                 <p>&copy; 2023 DMG. All rights reserved.</p>
             </div>
         </footer>
+       <script> document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+              item.parentElement.classList.toggle('active');
+            });
+          });</script>
+    </body>
+</html>     
